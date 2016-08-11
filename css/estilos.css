@@ -1,0 +1,174 @@
+@font-face{
+    font-family: "fuente principal";
+    src:url("AirbusSpecial.TTF");
+}
+
+@font-face{
+    font-family: "fuente secundaria";
+    src:url("ardleyshand.TTF");
+}
+
+body {
+      position: relative;
+      background: url("logosol.png");
+     }
+
+  #section1 {padding-top:200px;}
+  #section2 {padding-top:200px;}
+  #section3 {padding-top:200px;}
+  #section4 {padding-top:200px;}
+  #section5 {padding-top:100px;}
+  
+
+.carousel .slide{
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: transparent;
+    border: 3px solid;
+    border-color: rgb(28,90,148);
+}
+.jumbotron h1{
+    font-family: "fuente principal";
+    color: rgb(28,90,148);
+    text-align: center;
+}
+
+.jumbotron h2, h3{
+    font-family: "fuente secundaria";
+    color: rgb(218,37,29);
+    text-align: center;
+}
+
+.btn-success{
+    width: 50%;
+    margin-left: 25%;
+    font-family: "fuente secundaria";
+    font-size: 100%;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: white;
+    border: 3px solid;
+    border-color: transparent  transparent rgb(28,90,148) transparent; 
+}
+
+.navbar-nav {
+float:none;
+margin:0 auto;
+display: block;
+text-align: center;
+}
+
+.navbar-nav>li {
+display: inline-block;
+float:none;
+}
+
+.navbar-default .navbar-nav > ul > a > #logo{
+    width: 220px;
+    height: 100px;   
+}
+
+ul .thumbnail {
+    border-color: transparent;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    margin: 0px 1em;
+    color: rgb(28,90,148);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    /*Menú cuando paso el mouse encima*/
+    -moz-box-shadow:inset 0px 1px 0px 0px rgb(28,90,148);
+    -webkit-box-shadow:inset 0px 1px 0px 0px rgb(28,90,148);
+    box-shadow:inset 0px 1px 0px 0px rgb(28,90,148);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgb(28,90,148)), color-stop(1, whitesmoke));
+    background:-moz-linear-gradient(bottom, rgb(28,90,148) 5%, whitesmoke 100%);
+    background:-webkit-linear-gradient(bottom, rgb(28,90,148) 5%, whitesmoke 100%);
+    background:-o-linear-gradient(bottom, rgb(28,90,148) 5%, whitesmoke 100%);
+    background:-ms-linear-gradient(bottom, rgb(28,90,148) 5%, whitesmoke 100%);
+    background:linear-gradient(to top, rgb(28,90,148) 5%, whitesmoke 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='rgb(28,90,148)', endColorstr='#ededed',GradientType=0);
+    background-color:rgb(28,90,148);
+    color: whitesmoke;
+}2
+.navbar-default .navbar-nav > a, 
+.navbar-default .navbar-nav > a:hover, 
+.navbar-default .navbar-nav > a:focus {
+    color: whitesmoke;
+    background-color: rgb(28,90,148);
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: whitesmoke;
+    /*background-color: rgb(29, 191, 83); --color verde despues menu*/
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: whitesmoke;
+        background-color: rgb(218,37,29);
+    }
+
+.navbar-default .navbar-nav .open .dropdown-menu,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+    color: rgb(28,90,148);
+    background-color: white;    
+    border-color: rgb(28,90,148);
+} 
+
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    color: rgb(218,37,29);
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    color: gold;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    color: whitesmoke;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: rgb(28,90,148);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: steelblue;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: rgb(28,90,148);
+}
+
+.bg-4 { 
+      background-color: #2f2f2f;
+      color: #fff;
+  }
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: whitesmoke;
+    }
+
+    .navbar-nav>li {
+    display: block;
+    float:none;
+    }
+
+    .btn-success{
+    font-size: 15px;
+    }
+}
